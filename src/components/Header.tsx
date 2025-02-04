@@ -120,7 +120,7 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed w-full bg-foreground text-white z-10 transition-all border-b border-foreground`}
+      className={`fixed w-full bg-foreground text-white z-10 transition-all`}
     >
       <Container className="flex items-center relative">
         <Logo />

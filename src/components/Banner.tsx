@@ -37,7 +37,7 @@ const Banner = () => {
               прокладки кабеля, приборы учета и управления, инструменты и
               средства защиты, а также шкафы для оборудования.
             </p>
-            <p>Качество гарантировано!</p>
+            <p className="w-full text-center">Качество гарантировано!</p>
             <Link
               href={PATHS.catalog}
               className="p-2 bg-accent text-black animate-bounce"

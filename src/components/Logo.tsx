@@ -12,9 +12,12 @@ const Logo = () => {
         src="/favicon.png"
         alt="icon"
       />
-      <h1 className="text-xl whitespace-nowrap md:text-4xl font-bold p-4 text-accent">
-        Asia Power Operating<span className="text-secondary">.</span>
-      </h1>
+      <div className="flex flex-col p-4">
+        <h1 className="text-xl whitespace-nowrap md:text-3xl uppercase text-accent">
+          Asia Power
+        </h1>
+        <h1 className="uppercase tracking-[10px]">Operating</h1>
+      </div>
     </Link>
   );
 };
