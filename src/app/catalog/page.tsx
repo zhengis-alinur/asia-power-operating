@@ -1,4 +1,5 @@
 import Categories from "@/components/Categories";
+import GetInTouch from "@/components/GetInTouch";
 import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
@@ -31,6 +32,7 @@ const Page = () => {
         </div>
       </div>
       <Categories />
+      <GetInTouch />
     </div>
   );
 };

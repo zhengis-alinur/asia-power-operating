@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import GetInTouch from "@/components/GetInTouch";
 import ProductCard from "@/components/ProductCard";
 import { categoryMapping } from "@/data/categories";
 import { products } from "@/data/products";
@@ -73,6 +74,7 @@ const Page = async ({ params }: Props) => {
           ))}
         </div>
       </Container>
+      <GetInTouch />
     </div>
   );
 };

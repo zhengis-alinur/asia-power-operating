@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import GetInTouch from "@/components/GetInTouch";
 import { products } from "@/data/products";
 import { Category } from "@/types/Products";
 import { Metadata } from "next";
@@ -70,6 +71,7 @@ const Page = async ({ params }: Props) => {
         <Container>
           <div dangerouslySetInnerHTML={{ __html: product.__html }} />
         </Container>
+        <GetInTouch />
       </div>
     )
   );

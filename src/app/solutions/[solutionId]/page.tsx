@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
 import "./styles.css";
+import GetInTouch from "@/components/GetInTouch";
 
 type Props = {
   params: Promise<{ solutionId: string }>;
@@ -56,6 +57,7 @@ const Page = async ({ params }: Props) => {
         <div className="content-wrapper m-auto max-w-[960px] w-full">
           {solution.content}
         </div>
+        <GetInTouch />
       </div>
     )
   );

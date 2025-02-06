@@ -114,7 +114,7 @@ const Header = () => {
     },
     {
       label: "Контакты",
-      href: "/",
+      href: PATHS.contacts,
     },
   ];
 

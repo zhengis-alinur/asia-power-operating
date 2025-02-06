@@ -3,6 +3,7 @@ import { PT_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { keywords } from "@/data/keywords";
+import Footer from "@/components/Footer";
 
 const ptSans = PT_Sans({
   subsets: ["cyrillic"],
@@ -32,9 +33,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ptSans.className} antialiased flex flex-col pb-24`}>
+      <body
+        className={`${ptSans.className} antialiased flex flex-col justify-between min-h-screen`}
+      >
         <Header />
-        {children}
+        <div className="min-h-screen">{children}</div>
+        <Footer />
       </body>
     </html>
   );
