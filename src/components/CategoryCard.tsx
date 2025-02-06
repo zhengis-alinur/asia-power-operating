@@ -14,9 +14,9 @@ const CategoryCard = ({
   return (
     <Link
       href={link}
-      className="product-card w-full h-80 flex flex-col  relative"
+      className="product-card h-44 md:w-80 md:h-80 flex flex-col items-center relative"
     >
-      <div className="relative w-full flex-1 bg-blue-50 shadow-xl hover:shadow-2xl transition-all rounded-full">
+      <div className="relative flex-1 w-1/2 md:bg-blue-50 md:shadow-xl md:hover:shadow-2xl transition-all rounded-full">
         <Image
           className="scale-105"
           fill
@@ -25,7 +25,7 @@ const CategoryCard = ({
           alt={image}
         />
       </div>
-      <p className=" text-xl p-2 text-center ">{name}</p>
+      <p className=" md:text-xl p-2 text-center ">{name}</p>
     </Link>
   );
 };

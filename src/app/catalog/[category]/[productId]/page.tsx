@@ -61,15 +61,18 @@ const Page = async ({ params }: Props) => {
                 src={`/products/${category}/${product.image}`}
               />
             </div>
-            <h1 className="text-5xl uppercase">{product.name}</h1>
-            <p className="text-xl">
+            <h1 className="text-2xl md:text-5xl uppercase ">{product.name}</h1>
+            <p className="text-xl w-full text-center">
               Asia Power Operating представляет широкий спектр электрической
               продукции
             </p>
           </div>
         </div>
         <Container>
-          <div dangerouslySetInnerHTML={{ __html: product.__html }} />
+          <div
+            className="px-8 overflow-hidden"
+            dangerouslySetInnerHTML={{ __html: product.__html }}
+          />
         </Container>
         <GetInTouch />
       </div>

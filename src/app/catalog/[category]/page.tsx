@@ -55,15 +55,17 @@ const Page = async ({ params }: Props) => {
               src={`/products/${category}/image.png`}
             />
           </div>
-          <h1 className="text-5xl uppercase">{categoryMapping[category]}</h1>
-          <p className="text-xl">
+          <h1 className="text-2xl md:text-5xl uppercase">
+            {categoryMapping[category]}
+          </h1>
+          <p className="text-xl w-full text-center">
             Asia Power Operating представляет широкий спектр электрической
             продукции
           </p>
         </div>
       </div>
       <Container>
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 px-24">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 px-8 md:px-24">
           {products[category].map(({ id, name, image }) => (
             <ProductCard
               key={id}

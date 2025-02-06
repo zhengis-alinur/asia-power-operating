@@ -17,8 +17,8 @@ const SolutionCards = ({
 }) => {
   return (
     <div
-      className={`grid w-[960px] grid-cols-3 py-8 gap-2 ${
-        cols === 4 && "grid-cols-4"
+      className={`grid md:w-[960px] grid-cols-1 md:grid-cols-3 py-8 gap-2 ${
+        cols === 4 && "md:grid-cols-4"
       }`}
     >
       {cards.map((card) => (

@@ -47,14 +47,14 @@ const Page = async ({ params }: Props) => {
             />
           )}
           <div className="flex flex-col items-center justify-center gap-10 absolute left-0 top-6 w-full h-full text-white">
-            <h1 className="text-5xl uppercase">{solution.name}</h1>
+            <h1 className="text-2xl md:text-5xl uppercase">{solution.name}</h1>
             <p className="text-xl text-center">
               Asia Power Operating представляет широкий спектр электрической
               продукции
             </p>
           </div>
         </div>
-        <div className="content-wrapper m-auto max-w-[960px] w-full">
+        <div className="content-wrapper m-auto max-w-[960px] w-full px-8">
           {solution.content}
         </div>
         <GetInTouch />

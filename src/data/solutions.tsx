@@ -72,7 +72,7 @@ export const solutions = [
           Ознакомьтесь с нашей высококачественной продукцией от ведущих
           производителей по всему миру!
         </p>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/1/1.jpg"
@@ -193,7 +193,7 @@ export const solutions = [
             },
           ]}
         />
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/1/14.jpg"
@@ -242,7 +242,7 @@ export const solutions = [
             },
           ]}
         />
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/1/18.jpg"
@@ -436,7 +436,7 @@ export const solutions = [
     name: "Частные дома",
     content: (
       <>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/2/1.jpg"
@@ -455,7 +455,7 @@ export const solutions = [
           высококачественного оборудования, чтобы помочь вам воплотить в жизнь
           интерьер вашей мечты!
         </p>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/2/2.jpg"
@@ -611,7 +611,7 @@ export const solutions = [
             },
           ]}
         />
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/2/20.jpg"
@@ -815,7 +815,7 @@ export const solutions = [
           эффективность эксплуатации. Новейшие светодиодные технологии делают
           рабочее место более динамичным, а пациенты чувствуют себя лучше.
         </p>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/3/1.jpg"
@@ -1034,7 +1034,7 @@ export const solutions = [
             },
           ]}
         />
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/3/26.jpg"
@@ -1046,7 +1046,7 @@ export const solutions = [
           Надежные решения для питания и защиты Вашего оборудование с помощью
           источников бесперебойного питания.
         </h3>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/3/27.jpg"
@@ -1060,7 +1060,7 @@ export const solutions = [
         <p>
           <b>Legrand:</b> Archimod; Trimod; Megaline; Keor LP.
         </p>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/3/28.jpg"
@@ -1612,7 +1612,7 @@ export const solutions = [
           производителей для учебных заведений!
         </p>
 
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/5/2.jpg"
@@ -1851,7 +1851,7 @@ export const solutions = [
           «LTx» — сокращение от английского слова «Low Toxic», что означает
           «низкий уровень токсичности».
         </p>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/5/19.jpg"
@@ -1971,7 +1971,7 @@ export const solutions = [
           освещения. Также следует рассмотреть возможность дальнейшего
           расширения энергосистемы.
         </p>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/6/1.jpg"
@@ -1992,7 +1992,7 @@ export const solutions = [
           в случае отключения питания.
         </p>
 
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/6/2.jpg"
@@ -2007,7 +2007,7 @@ export const solutions = [
           <b>Legrand</b>: Keor S; Keor HP; Trimod; Megaline; Keor MOD.
         </p>
 
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/6/3.jpg"
@@ -2334,7 +2334,7 @@ export const solutions = [
           центра необходимо учитывать особенности каждой зоны, чтобы обеспечить
           эффективное и надежное электроснабжение.
         </p>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/7/1.jpg"
@@ -2539,7 +2539,7 @@ export const solutions = [
             },
           ]}
         />
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/7/30.jpg"
@@ -2615,7 +2615,7 @@ export const solutions = [
             },
           ]}
         />
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/7/31.jpg"
@@ -2795,7 +2795,7 @@ export const solutions = [
           офис светлым и просторным в любое время. Переход на управляемую
           систему светодиодного освещения позволяет сэкономить до 80%.
         </p>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/8/1.jpg"
@@ -2890,7 +2890,7 @@ export const solutions = [
           системы, являются одним из наиболее перспективных направлений ее
           деятельности.
         </p>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/8/22.png"
@@ -2927,7 +2927,7 @@ export const solutions = [
           достичь КПД до 95 % (в экономичном режиме до 99 %) и максимально
           экономить электроэнергию и деньги.
         </p>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/8/23.jpg"
@@ -2939,7 +2939,7 @@ export const solutions = [
           <b>Основные серии Eaton</b>:5E; 5PX; 5PX GEN2; 9SX; 93PS; BladeUPC;
           Ellipse ECO; Ellipse PRO.
         </p>
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/8/24.jpg"
@@ -3168,7 +3168,7 @@ export const solutions = [
             },
           ]}
         />
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[400px] md:h-[500px] ">
           <Image
             fill
             src="/solutions/8/35.jpg"
