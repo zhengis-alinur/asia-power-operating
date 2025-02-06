@@ -144,7 +144,7 @@ const Header = () => {
           ))}
         </nav>
         <span
-          className="absolute right-5 top-5 block sm:hidden text-2xl z-10"
+          className="absolute right-5 top-5 block sm:hidden text-2xl z-10 text-white"
           onClick={() => setOpen((prev) => !prev)}
         >
           {open ? "✖" : "☰"}

@@ -25,7 +25,7 @@ const Banner = () => {
     >
       <SwiperSlide className="w-full relative">
         <div className="absolute z-10 left-0 top-0 w-full h-full pt-24">
-          <Container className="w-full h-full flex flex-col items-center justify-center gap-4 md:gap-12 text-white">
+          <Container className="w-full h-full flex flex-col items-center justify-center gap-4 md:gap-12 text-white p-10">
             <h1 className="font-bold text-xl md:text-4xl">
               Все для электрики в одном месте!
             </h1>
@@ -33,7 +33,7 @@ const Banner = () => {
               Получите профессиональное оборудование и комплектующие для монтажа
               электрооборудования!
             </p>
-            <p className="w-1/2 text-center hidden md:visible">
+            <p className="w-1/2 text-center hidden md:block">
               Получите профессиональное оборудование и комплектующие для монтажа
               электрооборудования! Кабельно-проводниковая продукция,
               низковольтное оборудование, электроустановочные и электромонтажные
