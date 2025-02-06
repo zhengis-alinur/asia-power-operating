@@ -21,7 +21,7 @@ const Header = () => {
     setOpen(false);
   }, [pathname]);
 
-  useClickOutside<HTMLDivElement>(ref, () => {
+  useClickOutside(ref, () => {
     setOpen(false);
   });
 
