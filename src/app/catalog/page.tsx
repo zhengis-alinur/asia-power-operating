@@ -23,9 +23,9 @@ const Page = () => {
           objectFit="cover"
           alt="intro"
         />
-        <div className="flex flex-col items-center justify-center gap-10 absolute left-0 top-0 w-full h-full text-white">
-          <h1 className="text-5xl uppercase">Продукция</h1>
-          <p className="text-xl">
+        <div className="flex flex-col items-center justify-center gap-10 absolute left-0 top-0 w-full h-full text-white p-10">
+          <h1 className="text-2xl md:text-5xl uppercase">Продукция</h1>
+          <p className="md:text-xl w-full text-center">
             Asia Power Operating представляет полный спектр электрической
             продукции
           </p>

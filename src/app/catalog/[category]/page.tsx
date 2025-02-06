@@ -45,7 +45,7 @@ const Page = async ({ params }: Props) => {
           objectFit="cover"
           alt="intro"
         />
-        <div className="flex flex-col items-center justify-center gap-10 absolute left-0 top-6 w-full h-full text-white">
+        <div className="flex flex-col items-center justify-center gap-10 absolute left-0 top-6 w-full h-full text-white p-10">
           <div className="h-[200] w-[200] flex items-center justify-center bg-foreground bg-opacity-75 rounded-full">
             <Image
               className="scale-110"
@@ -55,10 +55,10 @@ const Page = async ({ params }: Props) => {
               src={`/products/${category}/image.png`}
             />
           </div>
-          <h1 className="text-2xl md:text-5xl uppercase">
+          <h1 className="text-xl md:text-5xl uppercase w-full text-center">
             {categoryMapping[category]}
           </h1>
-          <p className="text-xl w-full text-center">
+          <p className="md:text-xl w-full text-center">
             Asia Power Operating представляет широкий спектр электрической
             продукции
           </p>

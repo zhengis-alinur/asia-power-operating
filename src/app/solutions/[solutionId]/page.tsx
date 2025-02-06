@@ -46,9 +46,11 @@ const Page = async ({ params }: Props) => {
               alt={solution.name}
             />
           )}
-          <div className="flex flex-col items-center justify-center gap-10 absolute left-0 top-6 w-full h-full text-white">
-            <h1 className="text-2xl md:text-5xl uppercase">{solution.name}</h1>
-            <p className="text-xl text-center">
+          <div className="flex flex-col items-center justify-center gap-10 absolute left-0 top-6 w-full h-full text-white px-10">
+            <h1 className="text-2xl md:text-5xl uppercase w-full text-center">
+              {solution.name}
+            </h1>
+            <p className="md:text-xl w-full text-center">
               Asia Power Operating представляет широкий спектр электрической
               продукции
             </p>

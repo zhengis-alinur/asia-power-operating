@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Container from "./Container";
 import Dropdown, { Item } from "./Dropdown/Dropdown";
 import MobileNav from "./MobileNav/MobileNav";
@@ -8,9 +8,22 @@ import Logo from "./Logo";
 import { Category } from "@/types/Products";
 import { PATHS } from "@/routes";
 import { categoryMapping } from "@/data/categories";
+import useClickOutside from "@/hooks/useClickOutside";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useClickOutside<HTMLDivElement>(ref, () => {
+    setOpen(false);
+  });
 
   const navConfig: Item[] = [
     {
@@ -120,6 +133,7 @@ const Header = () => {
 
   return (
     <div
+      ref={ref}
       className={`fixed w-full bg-foreground text-white z-10 transition-all`}
     >
       <Container className="flex items-center relative">
@@ -130,10 +144,10 @@ const Header = () => {
           ))}
         </nav>
         <span
-          className="absolute right-5 top-5 block sm:hidden"
+          className="absolute right-5 top-5 block sm:hidden text-2xl z-10"
           onClick={() => setOpen((prev) => !prev)}
         >
-          icon
+          {open ? "✖" : "☰"}
         </span>
         {open && <MobileNav config={navConfig} />}
       </Container>
