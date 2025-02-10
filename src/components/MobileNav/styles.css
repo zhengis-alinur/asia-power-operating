@@ -3,13 +3,20 @@
     display: none;
     transform: translateX(30px);
   }
-  li:hover > ul {
+
+  /* Use :active for touch interactions */
+  li:active > ul,
+  li:focus-within > ul {
     display: flex;
   }
+
   li > a svg {
     transform: rotate(0deg);
+    transition: transform 0.3s ease; /* Smooth transition */
   }
-  li:hover > a svg {
+
+  li:active > a svg,
+  li:focus-within > a svg {
     transform: rotate(180deg);
   }
 }

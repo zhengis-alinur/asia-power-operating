@@ -1,5 +1,7 @@
 import ProductCard from "@/components/ProductCard";
 import SolutionCards from "@/components/SolutionCards";
+import { PATHS } from "@/routes";
+import { Category } from "@/types/Products";
 import Image from "next/image";
 
 export const solutions = [
@@ -84,16 +86,16 @@ export const solutions = [
           cols={4}
           cards={[
             {
-              name: "Модульные и силовые  автоматы Legrand",
+              name: "Модульные и силовые автоматы Legrand",
               image: "/solutions/1/2.jpg",
               description: `TX3; DX3; DPХЗ.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
-              name: "Модульные и силовые  автоматы Schneider Electric",
+              name: "Модульные и силовые автоматы Schneider Electric",
               image: "/solutions/1/3.jpg",
               description: `Acti; Resi9.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "	Модульные автоматы и их комплектующие Chint",
@@ -106,13 +108,13 @@ export const solutions = [
                 Контактор серии NXC; 
                 Модульные контакторы NCH8.
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "EKF",
               image: "/solutions/1/5.jpg",
               description: `Proxima`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Кабельная продукция",
@@ -123,7 +125,7 @@ export const solutions = [
                 Кабель КГ; 
                 UTP cat.5, cat.6.
                 `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "Электроустановочные изделия Legrand",
@@ -132,19 +134,19 @@ export const solutions = [
                 Niloe;
                 Bticino;
                 Celiane.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Schneider Electric",
               image: "/solutions/1/8.jpg",
               description: `Asfora; Unica.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "EKF-1",
               image: "/solutions/1/9.jpg",
               description: `Рим; Минск.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Светотехническая продукция PHILIPS",
@@ -154,7 +156,7 @@ export const solutions = [
                 ECOHOME; 
                 ESSENTIAL; 
                 LEDBULD.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "IN HOME",
@@ -171,7 +173,7 @@ export const solutions = [
                 Светильники светодиодные 
                 герметичные серии ССП.
               `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "ЭРА",
@@ -183,13 +185,13 @@ export const solutions = [
                 Светильник ЖКХ светодиодный ЭРА SPB-301;
                 Аварийный светильник ЭРА SSA-101-3-20.
               `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Приборы учета электроэнергии Saiman",
               image: "/solutions/1/13.png",
               description: `Трехфазные счетчики серии Дала: LO, LQ, LP, ES, EY, EP, EZ. Однофазные счетчики серии Орман: CU, CK, CY, CJ, CI, BL.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
           ]}
         />
@@ -218,7 +220,7 @@ export const solutions = [
                 Сетевые видеорегистраторы; 
                 Цифровые видеорегистраторы;
                 Видеостены и мониторы.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Dahua",
@@ -227,7 +229,7 @@ export const solutions = [
                 Камеры HDCVI;
                 PTZ-камеры;
                 Тепловизорные камеры.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Smartec",
@@ -238,7 +240,7 @@ export const solutions = [
                 Мультиформатные камеры;
                 Аналоговые HD.
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
           ]}
         />
@@ -278,7 +280,7 @@ export const solutions = [
               name: "Hikvision",
               image: null,
               description: `Контроллеры; Терминалы доступа; Считыватели; Настольные считыватели; Кнопки; Исполнительные устройства; Дополнительные устройства; Турникеты; Домофоны; Досмотровое оборудование.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Dahua",
@@ -287,7 +289,7 @@ export const solutions = [
                 Сетевые контроллеры;
                 Домофоны;
                 Аксессуары.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Rubezh",
@@ -298,7 +300,7 @@ export const solutions = [
                 Web-/OSPD-турникеты;
                 Встроенное ПО;
                 Считыватели.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Smartec",
@@ -318,7 +320,7 @@ export const solutions = [
                 Электромеханические замки;
                 Доводчики.
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
           ]}
         />
@@ -355,7 +357,7 @@ export const solutions = [
                 Оповещатели адресные;
                 Расширители адресные;
                 Модули управления.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Консэл",
@@ -363,13 +365,13 @@ export const solutions = [
               description: `Газовое пожаротушение; 
                 Порошкове пожаротушение; 
                 Компактные системы тушения.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Заря",
               image: null,
               description: `Газовое пожаротушение.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Smartec",
@@ -385,7 +387,7 @@ export const solutions = [
                 Шкафы автоматики; 
                 Шкафы монтажные взрывозащищенное оборудование. 
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
           ]}
         />
@@ -405,39 +407,39 @@ export const solutions = [
               name: "Legrand",
               image: "/solutions/1/21.jpg",
               description: `Оптоволоконные кабели; Патч-панели; Кабели SF/UTP; F/UTP; U/UTP; F/FTP; U/FTP; S/FTP; Прямые патч-корды RJ 45/RJ 45 в версиях F/UTP; U/UTP; SF/UTP; S/FTP.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "ITK",
               image: "/solutions/1/22.jpg",
               description: `LAN-кабель; LAN-кабель GREEN; Разъемы для кабеля; Инструменты и тестеры для кабеля; Инструменты; Тестеры; Монтажные аксессуары; Кабель огнестойкий; Кабель интерфейсный; Кабель интерфейсный RS485; Кабель интерфейсный огнестойкий RS485.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "HYPERLINE Витая пара:",
               image: "/solutions/1/23.jpg",
               description: `категория 3; категория 5; категория 5E; категория 6; категория 6A; категория 7, 7A, 8; Волоконно-оптический: внутренний; внутренний/внешний; внешний;`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "HYPERLINE Коаксиальный",
               image: "/solutions/1/24.jpg",
               description: `тип RG-6; тип RG-8; тип RG-11; тип RG-58; тип RG-59; тип SAT703N; Телефонный; Гибридный.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "HPE Aruba",
               image: "/solutions/1/25.jpeg",
 
               description: `Шлюзы и контроллеры; Виртуальные шлюзы; Внутренние точки доступа; Наружные точки доступа; Стекируемые коммутаторы с облачным управлением.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "ИЭК",
               image: "/solutions/1/26.jpg",
 
               description: `Лотки металлические листовые; Лотки металлические лестничные; Лотки металлические проволочные.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
@@ -487,19 +489,19 @@ export const solutions = [
               name: "Виды ламп PHILIPS для комнатного освещения",
               image: "/solutions/2/3.jpg",
               description: `ECOHOME;ESSENTIAL;LEDBULD.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Лампы IN HOME серий",
               image: "/solutions/2/4.jpg",
               description: `LED-A60-VC; LED-GX53-VC; LED-СВЕЧА НА ВЕТРУ-standard; LED-СВЕЧА-deco; LED-ШАР-VC; LED-JCDRC-VC.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "ЭРА",
               image: "/solutions/2/5.jpg",
               description: `Лампа серии RED LINE; Лампа серии STD LED; Трековый светильник однофазный ЭРА TR50; Трековый светильник однофазный ЭРА TR45; Шинопровод однофазный ЭРА TR-100 - 1PT - BK 1м черный; Светильник настенно-потолочный спот ЭРА OL21; Светильник настенно-потолочный спот ЭРА OL8; Подсветка OL15; Подсветка OL9.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
           ]}
         />
@@ -515,25 +517,25 @@ export const solutions = [
               name: "LEGRAND",
               image: "/solutions/2/6.jpg",
               description: `RX3;DPХЗ.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "SCHNEIDER ELECTRIC",
               image: "/solutions/2/7.jpeg",
               description: `EASY 9`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "CHINT",
               image: "/solutions/2/8.jpg",
               description: `NXB-63;NXB-63S;NCH8.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "EKF",
               image: "/solutions/2/9.jpg",
               description: `PROXIMA `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
           ]}
         />
@@ -549,22 +551,22 @@ export const solutions = [
             {
               name: "Valena Life",
               image: "/solutions/2/10.png",
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Niloe",
               image: "/solutions/2/11.jpeg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Bticino",
               image: "/solutions/2/12.jpeg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Celiane",
               image: "/solutions/2/13.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
           ]}
         />
@@ -578,12 +580,12 @@ export const solutions = [
             {
               name: "Asfora",
               image: "/solutions/2/14.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Unica",
               image: "/solutions/2/15.jpeg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
           ]}
         />
@@ -595,12 +597,12 @@ export const solutions = [
             {
               name: "Рим",
               image: "/solutions/2/16.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Минск",
               image: "/solutions/2/17.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
           ]}
         />
@@ -615,13 +617,13 @@ export const solutions = [
               name: "Однофазные счетчики серии Орман",
               image: "/solutions/2/18.jpg",
               description: "CU;CK;CY;CJ;CI;BL.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
             {
               name: "Газовые счетчики ",
               image: "/solutions/2/19.jpg",
               description: "RR;DE;DD;RH;RJ;RL;DC.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
           ]}
         />
@@ -649,7 +651,7 @@ export const solutions = [
                 Сетевые видеорегистраторы; 
                 Цифровые видеорегистраторы;
                 Видеостены и мониторы.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Dahua",
@@ -658,7 +660,7 @@ export const solutions = [
                 Камеры HDCVI;
                 PTZ-камеры;
                 Тепловизорные камеры.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Smartec",
@@ -669,7 +671,7 @@ export const solutions = [
                 Мультиформатные камеры;
                 Аналоговые HD.
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
           ]}
         />
@@ -692,7 +694,7 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/2/24.jpeg",
               description: `Кнопки; Домофоны.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Dahua",
@@ -700,13 +702,13 @@ export const solutions = [
               description: `Считыватели;
                 Домофоны;
                 Аксессуары. `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Rubezh",
               image: "/solutions/2/26.jpg",
               description: `Модули доступа; OSDP-замки; Считыватели.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Smartec",
@@ -714,7 +716,7 @@ export const solutions = [
               description: `
                 Домофоны; Идентификаторы; Шлагбаумы; Электромагнитные замки; Электромеханические замки.
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
           ]}
         />
@@ -736,13 +738,13 @@ export const solutions = [
               name: "Rubezh",
               image: "/solutions/2/28.jpg",
               description: `Приборы приемно-контрольные управления и индикации; Извещатели пожарные адресные.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Smartec",
               image: "/solutions/2/29.jpg",
               description: `Приборы приемно-контрольные; Адресные пожарные извещатели.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
           ]}
         />
@@ -765,19 +767,19 @@ export const solutions = [
               name: "Legrand",
               image: "/solutions/2/30.jpg",
               description: `Оптоволоконные кабели; Патч-панели; Кабели SF/UTP; F/UTP; U/UTP; F/FTP; U/FTP; S/FTP; Прямые патч-корды RJ 45/RJ 45 в версиях F/UTP; U/UTP; SF/UTP; S/FTP.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "ITK",
               image: "/solutions/2/31.jpg",
               description: `LAN-кабель; LAN-кабель GREEN; Разъемы для кабеля; Инструменты и тестеры для кабеля; Инструменты; Тестеры; Монтажные аксессуары; Кабель огнестойкий; Кабель интерфейсный; Кабель интерфейсный RS485; Кабель интерфейсный огнестойкий RS485.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "HYPERLINE",
               image: "/solutions/2/32.jpg",
               description: `категория 3; категория 5; категория 5E; категория 6; категория 6A; категория 7, 7A, 8; Волоконно-оптический: внутренний; внутренний/внешний; внешний;`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
@@ -789,7 +791,7 @@ export const solutions = [
           <ProductCard
             image="/solutions/2/33.jpg"
             name={""}
-            link={""}
+            link={`${PATHS.catalog}/${Category.CableAndWireProducts}`}
             description="Кабель ВВГ нг LS; Кабель ВВГ нг FRLS; Кабель АВВГ; Кабель КГ; ПВ1, ПВ3, ПВС"
           />
         </div>
@@ -834,42 +836,42 @@ export const solutions = [
               image: "/solutions/3/2.jpeg",
               description:
                 "Встрaиваемый светильник LuxSpace — это сочетание высокой эффективности, зрительного комфорта и современного дизайна.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "CoreLine Waterproof",
               image: "/solutions/3/3.png",
               description:
                 "Мы применяем световые решения, обеспечивающие высокое качество освещения и значительно экономящие затраты на энергоносители и обслуживание, независимо от того, новое ли или отреставрированное здание.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "CoreLine Panel",
               image: "/solutions/3/4.png",
               description:
                 "Универcальные потолочные светодиодные светильники потребляют на 40% меньше электроэнергии, чем трубчатые люминесцентные лампы. Обеспечивают равномерное освещение за счет равномерно распределенной световой поверхности.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "FlexBlend",
               image: "/solutions/3/5.jpeg",
               description:
                 "FlexBlend демонстрирует возможности светодиодного освещения для приемных кабинетов.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "PowerBalance",
               image: "/solutions/3/6.jpg",
               description:
                 "Недорогие, безопасные и качественные в областях применения, где гигиена имеет решающее значение (например, в крупных больницах).",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "PowerBalance gen2",
               image: "/solutions/3/7.jpeg",
               description:
                 "Светодиодные встраиваемые потолочные светильники, которые можно использовать для общего освещения. Светодиодные светильники являются идеальным заменителем традиционных люминесцентных ламп. Экономят на 45% больше электроэнергии по сравнению с функциональными светильниками под лампы TL5 и требуют минимального обслуживания.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
           ]}
         />
@@ -881,21 +883,21 @@ export const solutions = [
               image: "/solutions/3/8.jpg",
               description:
                 "SOL S LED накладной круглый светодиодный светильник; SOL P LED подвесной круглый светодиодный светильник; SLIM CLEAN LED светодиодные светильники с IP защитой 54; UGR DL PREMIUM; STANDARD LED;",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "ЭРА",
               image: "/solutions/3/9.jpg",
               description:
                 "Аварийный светильник светодиодный ЭРА SPO; Бактерицидная ультрафиолетовая лампа ЭРА UV-С; IN HOME: Светильник светодиодный СПБ-2-КРУГ; Светильник светодиодный СПБ-2-КВАДРАТ; Светильник светодиодный СПБ-2Д-КВАДРАТ.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "IN HOME",
               image: "/solutions/3/10.jpg",
               description:
                 "Светильник светодиодный СПБ-2-КРУГ; Светильник светодиодный СПБ-2-КВАДРАТ; Светильник светодиодный СПБ-2Д-КВАДРАТ.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
           ]}
         />
@@ -907,7 +909,7 @@ export const solutions = [
           <ProductCard
             name="EKF"
             description="Рим; Минск; Мурманск."
-            link=""
+            link={`${PATHS.catalog}/${Category.ElectricalInstallationProducts}`}
             image="/solutions/3/11.jpg"
           />
         </div>
@@ -919,25 +921,25 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/3/12.jpeg",
               description: `Контроллеры; Терминалы доступа; Считыватели; Настольные считыватели; Кнопки; Исполнительные устройства; Дополнительные устройства; Турникеты; Досмотровое оборудование.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Dahua",
               image: "/solutions/3/13.jpg",
               description: `Считыватели; Сетевые контроллеры; Аксессуары.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Rubezh",
               image: "/solutions/3/14.jpg",
               description: `Контроллеры; Модули доступа; OSPD-замки; Web-/OSPD-турникеты; Считыватели.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Smartec",
               image: "/solutions/3/15.jpg",
               description: `Сетевые контроллеры; Автономные контроллеры; Биометрические считыватели; Терминалы учета рабочего времени; Контроль маршрутов; Идентификаторы; Электромагнитные замки; Электромеханические замки;`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
           ]}
         />
@@ -953,25 +955,25 @@ export const solutions = [
               name: "Schneider Electric",
               image: "/solutions/3/16.jpeg",
               description: `ACTI9; RESI 9. TeSys контакторы`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Legrand",
               image: "/solutions/3/17.jpg",
               description: `TX3;DX3;DPX3.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Chint",
               image: "/solutions/3/18.jpg",
               description: `NXB-63; NB1-63H; ДИФ NXBLE-63; Устройство автоматического ввода резерва NXZM-125S; NM1, NXМ силовые автоматы; Пускатель NS2.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "EKF",
               image: "/solutions/3/19.jpg",
               description: `1)PROXIMA; 2)AVERES.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
           ]}
         />
@@ -986,13 +988,13 @@ export const solutions = [
               name: "Трехфазные счетчики серии Дала",
               image: "/solutions/3/20.jpg",
               description: `LO;LQ;LP;ES;EY;EP;EZ.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
             {
               name: "LO;LQ;LP;ES;EY;EP;EZ.",
               image: "/solutions/3/21.jpg",
               description: `CU;CK;CY;CJ;CI;BL.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
           ]}
         />
@@ -1015,25 +1017,25 @@ export const solutions = [
               name: "Rubezh",
               image: "/solutions/3/22.jpg",
               description: `Центральный прибор индикации и управления; Программное обеспечение; Приборы приемно-контрольные управления и индикации; Модули сопряжения и связи; Извещатели пожарные адресные; Оповещатели адресные; Расширители адресные; Модули управления.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Smartec",
               image: "/solutions/3/23.jpg",
               description: `Приборы приемно-контрольные; Блоки индикации и управления; Устройства передачи данных; Устройства защиты линий; Адресные интерфейсные модули; Блоки питания; Адресные пожарные извещатели; Шкафы автоматики; Шкафы монтажные взрывозащищенное оборудование.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Консэл",
               image: "/solutions/3/24.jpg",
               description: `Газовое пожаротушение; Порошкове пожаротушение; Компактные системы тушения.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Заря",
               image: "/solutions/3/25.jpg",
               description: `Газовое пожаротушение.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
           ]}
         />
@@ -1165,7 +1167,7 @@ export const solutions = [
               name: "",
               image: "/solutions/3/31.jpg",
               description: `ППГнг(А)-HF;ППГЭнг(А)-HF;ПБПнг(А)-HF.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
@@ -1181,19 +1183,19 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/3/32.jpeg",
               description: `Сетевые видеокамеры; Аналоговые видеокамеры; Сетевые видеорегистраторы; Цифровые видеорегистраторы; Видеостены и мониторы.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Dahua",
               image: "/solutions/3/33.jpg",
               description: `Сетевые камеры; Камеры HDCVI; PTZ-камеры; Тепловизорные камеры.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Smartec",
               image: "/solutions/3/34.jpg",
               description: `IP-камеры; Мультиформатные камеры.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
           ]}
         />
@@ -1257,19 +1259,19 @@ export const solutions = [
               name: "Серия Arena Vision",
               image: "/solutions/4/2.png",
               description: `Прожекторы Arena Vision предназначены для больших крытых арен и спортивных стадионов. Они значительно увеличивают эмоциональный эффект спортивных состязаний для телезрителей и болельщиков на трибунах. Исключительный световой поток, оптическая эффективность, простота монтажа, надежность и универсальность ArenaVision поднимают стандарты качества спортивного освещения. Они идеально подходят для крытых спортивных площадок и открытых спортивных сооружений, а также для других целей.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Серия Sports Star",
               image: "/solutions/4/3.png",
               description: `Легко поможет вам достичь необходимого уровня освещенности на различных объектах с различным уровнем сложности. Прожекторы заливающего освещения Philips Sports Star LED поставляют новые стандарты благодаря отличному распределению света, высокой эффективности эксплуатации и низкому уровню загрязнения окружающей среды. Прожекторы Sports Star предназначены для мачтового освещения, а также для заливного освещения спортивных объектов и открытых площадок.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Tango G3 — BVP38x",
               image: "/solutions/4/4.png",
               description: `Отличное заливающее освещение с низкими начальными затратами. Энергосберегающий светодиодный прожектор Philips Tango G3 идеально подходит для многих объектов, которые требуют заливающего освещения.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
           ]}
         />
@@ -1328,19 +1330,19 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/4/7.jpeg",
               description: `Сетевые видеокамеры; Аналоговые видеокамеры; Сетевые видеорегистраторы; Цифровые видеорегистраторы; Видеостены и мониторы.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Dahua",
               image: "/solutions/4/8.jpg",
               description: `Сетевые камеры; Камеры HDCVI; PTZ-камеры; Тепловизорные камеры.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Smartec",
               image: "/solutions/4/9.jpg",
               description: `IP-камеры; IP-камеры с видеоаналитикой; Мультиформатные камеры; Аналоговые HD.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
           ]}
         />
@@ -1360,25 +1362,25 @@ export const solutions = [
               name: "Schneider Electric",
               image: "/solutions/4/10.jpg",
               description: `Acti 9; Easypact силовые автоматы; TeSys.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Legrand",
               image: "/solutions/4/11.jpg",
               description: `TX3;DX3;DPX3.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "EKF",
               image: "/solutions/4/12.jpg",
               description: `PROXIMA;AVERES.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Chint",
               image: "/solutions/4/13.jpg",
               description: `NXB-63; NB1-63H; NXBLE-63; NM1, NXМ силовые автоматы; Пускатель NS2.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
           ]}
         />
@@ -1389,13 +1391,13 @@ export const solutions = [
               name: "Электроустановочные изделия Legrand",
               image: "/solutions/4/14.jpg",
               description: `Mosaic; Niloe.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Электроустановочные изделия EKF",
               image: "/solutions/4/15.jpg",
               description: `Минск; Рим; Мурманск.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
           ]}
         />
@@ -1406,13 +1408,13 @@ export const solutions = [
               name: "Трехфазные счетчики серии Дала",
               image: "/solutions/4/16.jpg",
               description: `LO;LQ;LP;ES;EY;EP;EZ.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
             {
               name: "Однофазные счетчики серии Орман",
               image: "/solutions/4/17.jpg",
               description: `CU;CK;CY;CJ;CI;BL.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
           ]}
         />
@@ -1423,13 +1425,13 @@ export const solutions = [
               name: "Трансформаторы Saiman",
               image: "/solutions/4/18.jpg",
               description: `Шинный от 200А до 1000А; Опорный от 75А до 400А.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
             {
               name: "Трансформаторы Schneider Electric",
               image: "/solutions/4/19.jpg",
               description: `Трансформатор тока технологии PowerLogic от 250А до 1500А.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
           ]}
         />
@@ -1450,25 +1452,25 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/4/20.jpeg",
               description: `Контроллеры; Терминалы доступа; Считыватели; Настольные считыватели; Кнопки; Исполнительные устройства; Дополнительные устройства; Турникеты; Домофоны; Досмотровое оборудование.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Dahua",
               image: "/solutions/4/21.jpg",
               description: `Считыватели; Сетевые контроллеры; Домофоны; Аксессуары.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Rubezh",
               image: "/solutions/4/22.jpg",
               description: `Контроллеры; Модули доступа; OSDP-замки; Web-/OSDP-турникеты; Встроенное ПО; Считыватели.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Smartec",
               image: "/solutions/4/23.jpg",
               description: `Сетевые контроллеры; Автономные контроллеры; Биометрические считыватели; Терминалы учета рабочего времени; Контроль маршрутов; Домофоны; Идентификаторы; Турникеты; Металлодетекторы; Шлагбаумы; Блокираторы; Электромагнитные замки; Электромеханические замки; Доводчики.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
           ]}
         />
@@ -1488,7 +1490,7 @@ export const solutions = [
                 Оповещатели адресные;
                 Расширители адресные;
                 Модули управления.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Консэл",
@@ -1496,13 +1498,13 @@ export const solutions = [
               description: `Газовое пожаротушение; 
                 Порошкове пожаротушение; 
                 Компактные системы тушения.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Заря",
               image: "/solutions/4/27.jpg",
               description: `Газовое пожаротушение.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Smartec",
@@ -1518,7 +1520,7 @@ export const solutions = [
                 Шкафы автоматики; 
                 Шкафы монтажные взрывозащищенное оборудование. 
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
           ]}
         />
@@ -1529,19 +1531,19 @@ export const solutions = [
               name: "Legrand",
               image: "/solutions/4/28.png",
               description: `Оптоволоконные кабели; Патч-панели; Кабели SF/UTP; F/UTP; U/UTP; F/FTP; U/FTP; S/FTP; Прямые патч-корды RJ 45/RJ 45 в версиях F/UTP; U/UTP; SF/UTP; S/FTP.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "ITK",
               image: "/solutions/4/29.jpg",
               description: `LAN-кабель; LAN-кабель GREEN; Разъемы для кабеля; Инструменты и тестеры для кабеля; Инструменты; Тестеры; Монтажные аксессуары; Кабель огнестойкий; Кабель интерфейсный; Кабель интерфейсный RS485; Кабель интерфейсный огнестойкий RS485.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "HYPERLINE Витая пара:",
               image: "/solutions/4/30.jpg",
               description: `категория 3; категория 5; категория 5E; категория 6; категория 6A; категория 7, 7A, 8; Волоконно-оптический: внутренний; внутренний/внешний; внешний;`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
 
             {
@@ -1549,14 +1551,14 @@ export const solutions = [
               image: "/solutions/4/31.jpeg",
 
               description: `Шлюзы и контроллеры; Виртуальные шлюзы; Внутренние точки доступа; Наружные точки доступа; Стекируемые коммутаторы с облачным управлением.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "ИЭК",
               image: "/solutions/4/32.jpg",
 
               description: `Лотки металлические листовые; Лотки металлические лестничные; Лотки металлические проволочные.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
@@ -1567,7 +1569,7 @@ export const solutions = [
               name: "Кабельная продукция",
               image: "/solutions/4/33.jpg",
               description: `ВВГ нг LS; ВВГ нг FRLS; АВВГ; КГ.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
@@ -1654,21 +1656,21 @@ export const solutions = [
               image: "/solutions/5/3.jpg",
               description:
                 "Светодиодный светильник серии PowerBalance; Линейные светильники серии TrueLine Suspended.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Световые технологии",
               image: "/solutions/5/4.jpg",
               description:
                 "ASM/S; LTX LED; RIVAL ECO LED; FLAME DR UNI LED; SAFARI DL LED; OPL/S ECO LED;",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "ЭРА",
               image: "/solutions/5/5.jpg",
               description:
                 "Светодиодные панели серии SPO-6; Линейные светильники серии SPO-531; Линейные светильники серии SPO-532; Аварийные светильники серии SSA-101; Аварийные светильники серии SSA-103.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
           ]}
         />
@@ -1679,19 +1681,19 @@ export const solutions = [
               name: "EKF",
               image: "/solutions/5/6.jpg",
               description: "Минск; Рим.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Legrand",
               image: "/solutions/5/7.jpeg",
               description: "Niloe",
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Schneider Electric",
               image: "/solutions/5/8.jpg",
               description: "Asfora",
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
           ]}
         />
@@ -1708,14 +1710,14 @@ export const solutions = [
               name: "EKF",
               image: "/solutions/5/9.jpg",
               description: "Proxima; Averes.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Chint",
               image: "/solutions/5/10.jpg",
               description:
                 "NXB-63; NB1-63H; NXBLE-63; Устройство автоматического ввода резерва NXZM-125S; NM1, NXМ силовые автоматы; Пускатель NS2; Реле серии NXR.",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
           ]}
         />
@@ -1726,13 +1728,13 @@ export const solutions = [
               name: "Трехфазные счетчики серии Дала",
               image: "/solutions/5/11.jpg",
               description: `LO;LQ;LP;ES;EY;EP;EZ.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
             {
               name: "Однофазные счетчики серии Орман",
               image: "/solutions/5/12.jpg",
               description: `CU;CK;CY;CJ;CI;BL.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
           ]}
         />
@@ -1743,13 +1745,13 @@ export const solutions = [
               name: "Saiman",
               image: "/solutions/5/13.png",
               description: `Металлические встраиваемые и накладные щиты Saiman разной модульности`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.Cabinets}`,
             },
             {
               name: "Schneider Electric",
               image: "/solutions/5/14.jpg",
               description: `Распределительные пластиковые щиты Schneider Electric разной модульности серии Resi 9 MP`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.Cabinets}`,
             },
           ]}
         />
@@ -1770,7 +1772,7 @@ export const solutions = [
                 Сетевые видеорегистраторы; 
                 Цифровые видеорегистраторы;
                 Видеостены и мониторы.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Dahua",
@@ -1779,7 +1781,7 @@ export const solutions = [
                 Камеры HDCVI;
                 PTZ-камеры;
                 Тепловизорные камеры.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Smartec",
@@ -1790,7 +1792,7 @@ export const solutions = [
                 Мультиформатные камеры;
                 Аналоговые HD.
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
           ]}
         />
@@ -1801,19 +1803,19 @@ export const solutions = [
               name: "Legrand",
               image: "/solutions/4/28.png",
               description: `Оптоволоконные кабели; Патч-панели; Кабели SF/UTP; F/UTP; U/UTP; F/FTP; U/FTP; S/FTP; Прямые патч-корды RJ 45/RJ 45 в версиях F/UTP; U/UTP; SF/UTP; S/FTP.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "ITK",
               image: "/solutions/4/29.jpg",
               description: `LAN-кабель; LAN-кабель GREEN; Разъемы для кабеля; Инструменты и тестеры для кабеля; Инструменты; Тестеры; Монтажные аксессуары; Кабель огнестойкий; Кабель интерфейсный; Кабель интерфейсный RS485; Кабель интерфейсный огнестойкий RS485.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "HYPERLINE Витая пара:",
               image: "/solutions/4/30.jpg",
               description: `категория 3; категория 5; категория 5E; категория 6; категория 6A; категория 7, 7A, 8; Волоконно-оптический: внутренний; внутренний/внешний; внешний;`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
 
             {
@@ -1821,14 +1823,14 @@ export const solutions = [
               image: "/solutions/4/31.jpeg",
 
               description: `Шлюзы и контроллеры; Виртуальные шлюзы; Внутренние точки доступа; Наружные точки доступа; Стекируемые коммутаторы с облачным управлением.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "ИЭК",
               image: "/solutions/4/32.jpg",
 
               description: `Лотки металлические листовые; Лотки металлические лестничные; Лотки металлические проволочные.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
@@ -1879,25 +1881,25 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/4/20.jpeg",
               description: `Контроллеры; Терминалы доступа; Считыватели; Настольные считыватели; Кнопки; Исполнительные устройства; Дополнительные устройства; Турникеты; Домофоны; Досмотровое оборудование.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Dahua",
               image: "/solutions/4/21.jpg",
               description: `Считыватели; Сетевые контроллеры; Домофоны; Аксессуары.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Rubezh",
               image: "/solutions/4/22.jpg",
               description: `Контроллеры; Модули доступа; OSDP-замки; Web-/OSDP-турникеты; Встроенное ПО; Считыватели.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Smartec",
               image: "/solutions/4/23.jpg",
               description: `Сетевые контроллеры; Автономные контроллеры; Биометрические считыватели; Терминалы учета рабочего времени; Контроль маршрутов; Домофоны; Идентификаторы; Турникеты; Металлодетекторы; Шлагбаумы; Блокираторы; Электромагнитные замки; Электромеханические замки; Доводчики.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
           ]}
         />
@@ -1916,7 +1918,7 @@ export const solutions = [
                 Оповещатели адресные;
                 Расширители адресные;
                 Модули управления.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Консэл",
@@ -1924,13 +1926,13 @@ export const solutions = [
               description: `Газовое пожаротушение; 
                 Порошкове пожаротушение; 
                 Компактные системы тушения.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Заря",
               image: "/solutions/4/27.jpg",
               description: `Газовое пожаротушение.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Smartec",
@@ -1946,7 +1948,7 @@ export const solutions = [
                 Шкафы автоматики; 
                 Шкафы монтажные взрывозащищенное оборудование. 
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
           ]}
         />
@@ -2033,25 +2035,25 @@ export const solutions = [
               name: "Световые технологии",
               image: "/solutions/6/4.png",
               description: `BBLLINE; BBLSIDE; CYCLE TRIO P LED; CLASSY; BBL.OVAL; ARMA/P.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "ЭРА",
               image: "/solutions/6/5.jpg",
               description: `Светильник LED Geometria SPO-111; Светильник LED Geometria SPO-121; Светильник LED Geometria SPO-134; Декоративная подсветка WL17; Декоративная подсветка WL28; Декоративная подсветка WL30; Декоративная подсветка OL16; Декоративная подсветка OL15; Декоративная подсветка OL8; Декоративная подсветка OL9; Лента светодиодная LRCOB.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "IN HOME",
               image: "/solutions/6/7.jpg",
               description: `LED-JCDR-VC; LED-ST64; Потолочные светильники серии НПБ; Светильник трековый светодиодный TR-07-TL; Светильник трековый светодиодный TR-GU10-TL; Светильники серии COMFORT.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "PHILIPS",
               image: "/solutions/6/7.jpg",
               description: `MASTER Value Decorative LED bulbs MASTER LEDspot ExpertColor MV LuxSpace, recessed Ecohome Led Buld Ecofit LEDtube`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
           ]}
         />
@@ -2062,19 +2064,19 @@ export const solutions = [
               name: "Schneider Electric",
               image: "/solutions/6/8.jpg",
               description: `Acti 9`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Legrand",
               image: "/solutions/6/9.jpg",
               description: `DX3`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Chint",
               image: "/solutions/6/10.jpg",
               description: `NXB-63`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
           ]}
         />
@@ -2085,19 +2087,19 @@ export const solutions = [
               name: "Коллекции Legrand",
               image: "/solutions/6/13.png",
               description: `Европейское качество и многофункциональность электроустановочных изделий Legrand прослужат вам многие годы. Дизайн коллекции пропитан французским шармом и каждый элемент внесет свою ноту в общий стиль изысканного интерьера.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Коллекции Schneider Electric",
               image: "/solutions/6/14.jpg",
               description: `Электроустановочные изделия Schneider Electric обеспечат безопасность и комфорт в различных помещениях и благодаря разнообразию форм, цветов и отделок можно выбрать те изделия, которые отразят вашу индивидуальность.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Бюджетные серий для открытой и скрытой установки от бренда EKF",
               image: "/solutions/6/15.jpg",
               description: `В ассортименте EKF представлена серия электроустановочных изделий «Рим» с классом защиты IP20, предназначенная для открытой проводки, она отлично подойдет для установки на стену или потолок, например в загородных гостиницах. В спальнях, гостиных и коридорах городских гостиниц эстетичнее и современнее будут выглядеть розетки и выключатели скрытого монтажа. К примеру, классическая ЭУИ из коллекции «Минск» от EKF, которые легко вписать в любой интерьер.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
           ]}
         />
@@ -2115,7 +2117,7 @@ export const solutions = [
                 Оповещатели адресные;
                 Расширители адресные;
                 Модули управления.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Smartec",
@@ -2131,24 +2133,24 @@ export const solutions = [
                 Шкафы автоматики; 
                 Шкафы монтажные взрывозащищенное оборудование. 
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
           ]}
         />
-        <h3> Кабельно- проводниковая продукция</h3>
+        <h3> Кабельно-проводниковая продукция</h3>
         <SolutionCards
           cards={[
             {
               name: "Низкотоксичные кабели LTx для монтажа силовых линии в гостиничных комплексах",
               image: "/solutions/6/18.jpg",
               description: `ВВГ нг LS LTx; ВВГ нг FRLS LTx.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "	Cистема для прокладки кабеля Legrand кабельный канал",
               image: "/solutions/6/19.jpg",
               description: `DLP; DLP S.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
@@ -2169,19 +2171,19 @@ export const solutions = [
               name: "Legrand",
               image: "/solutions/4/28.png",
               description: `Оптоволоконные кабели; Патч-панели; Кабели SF/UTP; F/UTP; U/UTP; F/FTP; U/FTP; S/FTP; Прямые патч-корды RJ 45/RJ 45 в версиях F/UTP; U/UTP; SF/UTP; S/FTP.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "ITK",
               image: "/solutions/4/29.jpg",
               description: `LAN-кабель; Разъемы для кабеля; Инструменты и тестеры для кабеля; Инструменты; Тестеры; Монтажные аксессуары; Кабель огнестойкий; Кабель интерфейсный; Кабель интерфейсный RS485; Кабель интерфейсный огнестойкий RS485; Оптический кабель; Оптические кроссы; Оптические розетки, разъемы и модули Keystone; Оптические адаптеры; Оптические монтажные шнуры; Оптические соединительные шнуры; Оптические переходные шнуры; Оптические кроссы; Оптические кабельные сборки; Оптические шнуры.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "HYPERLINE",
               image: "/solutions/4/30.jpg",
               description: `Витая пара: Категория 3; Категория 5; Категория 5e; Категория 6; Категория 6a; Категория 7, 7a, 8; Волоконно-оптический: Внутренний; Внутренний/Внешний; Внешний; Коаксиальный: Тип RG-6; Тип RG-8; Тип RG-11; Тип RG-58; Тип RG-59; Тип Sat703n;`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
 
             {
@@ -2189,7 +2191,7 @@ export const solutions = [
               image: "/solutions/4/31.jpeg",
 
               description: `Шлюзы и контроллеры; Виртуальные шлюзы; Внутренние точки доступа; Наружные точки доступа; Стекируемые коммутаторы с облачным управлением.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
@@ -2200,13 +2202,13 @@ export const solutions = [
               name: "Трехфазные счетчики серии Дала",
               image: "/solutions/5/11.jpg",
               description: `LO;LQ;LP;ES;EY;EP;EZ.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
             {
               name: "Однофазные счетчики серии Орман",
               image: "/solutions/5/12.jpg",
               description: `CU;CK;CY;CJ;CI;BL.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
           ]}
         />
@@ -2222,19 +2224,19 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/4/7.jpeg",
               description: `Сетевые видеокамеры; Аналоговые видеокамеры; Сетевые видеорегистраторы; Цифровые видеорегистраторы; Видеостены и мониторы.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Dahua",
               image: "/solutions/6/11.jpg",
               description: `Сетевые камеры; Камеры HDCVI; PTZ-камеры; Тепловизорные камеры.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Smartec",
               image: "/solutions/4/9.jpg",
               description: `IP-камеры; IP-камеры с видеоаналитикой; Мультиформатные камеры; Аналоговые HD.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
           ]}
         />
@@ -2255,25 +2257,25 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/4/20.jpeg",
               description: `Контроллеры; Терминалы доступа; Считыватели; Настольные считыватели; Кнопки; Исполнительные устройства; Дополнительные устройства; Турникеты; Домофоны; Досмотровое оборудование.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Dahua",
               image: "/solutions/4/21.jpg",
               description: `Считыватели; Сетевые контроллеры; Домофоны; Аксессуары.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Rubezh",
               image: "/solutions/6/12.jpg",
               description: `Контроллеры; Модули доступа; OSDP-замки; Web-/OSDP-турникеты; Встроенное ПО; Считыватели.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Smartec",
               image: "/solutions/4/23.jpg",
               description: `Сетевые контроллеры; Автономные контроллеры; Биометрические считыватели; Терминалы учета рабочего времени; Контроль маршрутов; Домофоны; Идентификаторы; Турникеты; Металлодетекторы; Шлагбаумы; Блокираторы; Электромагнитные замки; Электромеханические замки; Доводчики.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
           ]}
         />
@@ -2359,19 +2361,19 @@ export const solutions = [
               name: "Chint",
               image: "/solutions/7/2.jpg",
               description: `NM1;NXM;NM8N.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Legrand",
               image: "/solutions/7/3.png",
               description: `DRX;DPХЗ.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Schneider electric",
               image: "/solutions/7/4.jpeg",
               description: `Easypact; Acti 9. `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
           ]}
         />
@@ -2382,19 +2384,19 @@ export const solutions = [
               name: "Chint",
               image: "/solutions/7/5.jpg",
               description: `NXB-63;NXB-125;NB1-63H;`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Legrand",
               image: "/solutions/7/6.jpg",
               description: `RX3;TX3;DX3.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Schneider electric",
               image: "/solutions/7/7.jpeg",
               description: `Easy 9; Acti 9.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
           ]}
         />
@@ -2417,61 +2419,73 @@ export const solutions = [
             {
               name: "Подвесные светильники",
               image: "/solutions/7/8.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Встраиваемые светильники",
               image: "/solutions/7/9.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Накладные светильники",
               image: "/solutions/7/10.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Настенные светильники",
               image: "/solutions/7/11.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Напольные светильники",
               image: "/solutions/7/12.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
-            { name: "Даунлайты", image: "/solutions/7/13.jpg", link: "" },
+            {
+              name: "Даунлайты",
+              image: "/solutions/7/13.jpg",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
             {
               name: "Карданные светильники",
               image: "/solutions/7/14.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Трековые светильники",
               image: "/solutions/7/15.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Подвесные светильники для высоких и средних пролетов",
               image: "/solutions/7/16.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Магистральные системы",
               image: "/solutions/7/17.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Реечные и линейные светильники",
               image: "/solutions/7/18.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Пылевлагозащищенные и светильники для чистых помещений",
               image: "/solutions/7/19.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
-            { name: "Decorative", image: "/solutions/7/20.jpg", link: "" },
-            { name: "Exit Emergency", image: "/solutions/7/21.jpg", link: "" },
+            {
+              name: "Decorative",
+              image: "/solutions/7/20.jpg",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
+            {
+              name: "Exit Emergency",
+              image: "/solutions/7/21.jpg",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
           ]}
         />
         <h3>
@@ -2483,35 +2497,35 @@ export const solutions = [
             {
               name: "TrueFashion",
               image: "/solutions/7/22.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
               description:
                 "Провоцируйте интерес с помощью инновационной технологии линз, обеспечивающей необходимое качество цвета для магазинов модных товаров.",
             },
             {
               name: "GreenSpace Accent",
               image: "/solutions/7/23.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
               description:
                 "Создавайте нужное настроение в магазине с помощью полной линейки энергоэффективного светодиодного акцентного освещения.",
             },
             {
               name: "LuxSpace Accent",
               image: "/solutions/7/24.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
               description:
                 "Регулируемые точечные светильники освещают модные бутики, супермаркеты и другие магазины, обеспечивая экономию электроэнергии.",
             },
             {
               name: "LuxSpace",
               image: "/solutions/7/25.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
               description:
                 "Огромный выбор потолочных светильников позволяет достичь баланса эффективности, комфорта и дизайна.",
             },
             {
               name: "Потолочный светильник GreenSpace",
               image: "/solutions/7/26.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
               description:
                 "Сокращение текущих расходов благодаря энергоэффективным потолочным светильникам.",
             },
@@ -2522,21 +2536,21 @@ export const solutions = [
             {
               name: "Световые технологии",
               image: "/solutions/7/27.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
               description:
                 "PIPE LED; MATRIX S LED; MATRIX R LED; DL POWER; LED MALL PLUG IN.",
             },
             {
               name: "ЭРА",
               image: "/solutions/7/28.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
               description:
                 "Серия JCDR; Серия RED LINE LED; Серия STD LED; Серия SKD; Серия SDL; Серия SPP-402.",
             },
             {
               name: "IN HOME",
               image: "/solutions/7/29.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
               description:
                 "LPU-02; LPU-01; LP-02; LP-01; Шинопровод однофазный встраиваемый RC-2B-TL; Светильник трековый под лампу TR-GX53-TL.",
             },
@@ -2562,19 +2576,19 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/4/7.jpeg",
               description: `Сетевые видеокамеры; Аналоговые видеокамеры; Сетевые видеорегистраторы; Цифровые видеорегистраторы; Видеостены и мониторы.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Dahua",
               image: "/solutions/6/11.jpg",
               description: `Сетевые камеры; Камеры HDCVI; PTZ-камеры; Тепловизорные камеры.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Smartec",
               image: "/solutions/4/9.jpg",
               description: `IP-камеры; IP-камеры с видеоаналитикой; Мультиформатные камеры; Аналоговые HD.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
           ]}
         />
@@ -2585,13 +2599,13 @@ export const solutions = [
               name: "Трехфазные счетчики серии Дала",
               image: "/solutions/5/11.jpg",
               description: `LO;LQ;LP;ES;EY;EP;EZ.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
             {
               name: "Однофазные счетчики серии Орман",
               image: "/solutions/5/12.jpg",
               description: `CU;CK;CY;CJ;CI;BL.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
           ]}
         />
@@ -2602,19 +2616,19 @@ export const solutions = [
               name: "Коллекции Legrand",
               image: "/solutions/6/13.png",
               description: `Европейское качество и многофункциональность электроустановочных изделий Legrand прослужат вам многие годы. Дизайн коллекции пропитан французским шармом и каждый элемент внесет свою ноту в общий стиль изысканного интерьера.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Коллекции Schneider Electric",
               image: "/solutions/6/14.jpg",
               description: `Электроустановочные изделия Schneider Electric обеспечат безопасность и комфорт в различных помещениях и благодаря разнообразию форм, цветов и отделок можно выбрать те изделия, которые отразят вашу индивидуальность.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Бюджетные серий для открытой и скрытой установки от бренда EKF",
               image: "/solutions/6/15.jpg",
               description: `В ассортименте EKF представлена серия электроустановочных изделий «Рим» с классом защиты IP20, предназначенная для открытой проводки, она отлично подойдет для установки на стену или потолок, например в загородных гостиницах. В спальнях, гостиных и коридорах городских гостиниц эстетичнее и современнее будут выглядеть розетки и выключатели скрытого монтажа. К примеру, классическая ЭУИ из коллекции «Минск» от EKF, которые легко вписать в любой интерьер.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
           ]}
         />
@@ -2643,25 +2657,25 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/4/20.jpeg",
               description: `Контроллеры; Терминалы доступа; Считыватели; Настольные считыватели; Кнопки; Исполнительные устройства; Дополнительные устройства; Турникеты; Домофоны; Досмотровое оборудование.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Dahua",
               image: "/solutions/7/32.jpg",
               description: `Считыватели; Сетевые контроллеры; Домофоны; Аксессуары.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Rubezh",
               image: "/solutions/6/12.jpg",
               description: `Контроллеры; Модули доступа; OSDP-замки; Web-/OSDP-турникеты; Встроенное ПО; Считыватели.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Smartec",
               image: "/solutions/7/33.jpg",
               description: `Сетевые контроллеры; Автономные контроллеры; Биометрические считыватели; Терминалы учета рабочего времени; Контроль маршрутов; Домофоны; Идентификаторы; Турникеты; Металлодетекторы; Шлагбаумы; Блокираторы; Электромагнитные замки; Электромеханические замки; Доводчики.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
           ]}
         />
@@ -2679,7 +2693,7 @@ export const solutions = [
                 Оповещатели адресные;
                 Расширители адресные;
                 Модули управления.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Smartec",
@@ -2695,7 +2709,7 @@ export const solutions = [
                 Шкафы автоматики; 
                 Шкафы монтажные взрывозащищенное оборудование. 
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
           ]}
         />
@@ -2706,13 +2720,13 @@ export const solutions = [
               name: "Низкотоксичные кабели LTx для монтажа силовых линии в гостиничных комплексах",
               image: "/solutions/6/18.jpg",
               description: `ВВГ нг LS LTx; ВВГ нг FRLS LTx.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "	Cистема для прокладки кабеля Legrand кабельный канал",
               image: "/solutions/6/19.jpg",
               description: `DLP; DLP S.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
@@ -2733,19 +2747,19 @@ export const solutions = [
               name: "Legrand",
               image: "/solutions/4/28.png",
               description: `Оптоволоконные кабели; Патч-панели; Кабели SF/UTP; F/UTP; U/UTP; F/FTP; U/FTP; S/FTP; Прямые патч-корды RJ 45/RJ 45 в версиях F/UTP; U/UTP; SF/UTP; S/FTP.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "ITK",
               image: "/solutions/4/29.jpg",
               description: `LAN-кабель; Разъемы для кабеля; Инструменты и тестеры для кабеля; Инструменты; Тестеры; Монтажные аксессуары; Кабель огнестойкий; Кабель интерфейсный; Кабель интерфейсный RS485; Кабель интерфейсный огнестойкий RS485; Оптический кабель; Оптические кроссы; Оптические розетки, разъемы и модули Keystone; Оптические адаптеры; Оптические монтажные шнуры; Оптические соединительные шнуры; Оптические переходные шнуры; Оптические кроссы; Оптические кабельные сборки; Оптические шнуры.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "HYPERLINE",
               image: "/solutions/4/30.jpg",
               description: `Витая пара: Категория 3; Категория 5; Категория 5e; Категория 6; Категория 6a; Категория 7, 7a, 8; Волоконно-оптический: Внутренний; Внутренний/Внешний; Внешний; Коаксиальный: Тип RG-6; Тип RG-8; Тип RG-11; Тип RG-58; Тип RG-59; Тип Sat703n;`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
 
             {
@@ -2753,7 +2767,7 @@ export const solutions = [
               image: "/solutions/4/31.jpeg",
 
               description: `Шлюзы и контроллеры; Виртуальные шлюзы; Внутренние точки доступа; Наружные точки доступа; Стекируемые коммутаторы с облачным управлением.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
@@ -2816,50 +2830,62 @@ export const solutions = [
             {
               name: "PowerBalance RC360B",
               image: "/solutions/8/2.png",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
-            { name: "SlimBlend Square", image: "/solutions/8/3.png", link: "" },
+            {
+              name: "SlimBlend Square",
+              image: "/solutions/8/3.png",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
             {
               name: "CoreLine Downlight",
               image: "/solutions/8/4.png",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "TrueLine, встраиваемый",
               image: "/solutions/8/5.png",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "GreenSpace Accent Projector",
               image: "/solutions/8/6.png",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
-            { name: "StyliD", image: "/solutions/8/7.png", link: "" },
-            { name: "CoreLine Panel", image: "/solutions/8/8.png", link: "" },
+            {
+              name: "StyliD",
+              image: "/solutions/8/7.png",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
+            {
+              name: "CoreLine Panel",
+              image: "/solutions/8/8.png",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
             {
               name: "CoreLine Recessed",
               image: "/solutions/8/9.png",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "CoreLine Surface-mounted",
               image: "/solutions/8/10.png",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "LuxSpace, recessed",
               image: "/solutions/8/11.png",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "CoreLine Recessed Spot",
               image: "/solutions/8/12.png",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
             {
               name: "Светодиодный софит Essential Smartbright",
               image: "/solutions/8/13.png",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
           ]}
         />
@@ -2867,17 +2893,45 @@ export const solutions = [
         <SolutionCards
           cols={4}
           cards={[
-            { name: "PERFECT LED", image: "/solutions/8/14.jpg", link: "" },
-            { name: "PIXED LED", image: "/solutions/8/15.jpg", link: "" },
-            { name: "UGR DL PREMIUM", image: "/solutions/8/16.jpg", link: "" },
-            { name: "STANDSOL LED", image: "/solutions/8/17.jpg", link: "" },
-            { name: "SPACE LED DREAM", image: "/solutions/8/18.jpg", link: "" },
-            { name: "PROFILE 60L LED", image: "/solutions/8/19.jpg", link: "" },
-            { name: "PROFILE 60H LED", image: "/solutions/8/20.jpg", link: "" },
+            {
+              name: "PERFECT LED",
+              image: "/solutions/8/14.jpg",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
+            {
+              name: "PIXED LED",
+              image: "/solutions/8/15.jpg",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
+            {
+              name: "UGR DL PREMIUM",
+              image: "/solutions/8/16.jpg",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
+            {
+              name: "STANDSOL LED",
+              image: "/solutions/8/17.jpg",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
+            {
+              name: "SPACE LED DREAM",
+              image: "/solutions/8/18.jpg",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
+            {
+              name: "PROFILE 60L LED",
+              image: "/solutions/8/19.jpg",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
+            {
+              name: "PROFILE 60H LED",
+              image: "/solutions/8/20.jpg",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
+            },
             {
               name: "OREOL LINE FLD/P",
               image: "/solutions/8/21.jpg",
-              link: "",
+              link: `${PATHS.catalog}/${Category.LightingProducts}`,
             },
           ]}
         />
@@ -2957,19 +3011,19 @@ export const solutions = [
               name: "Legrand",
               image: "/solutions/8/25.jpg",
               description: `RX3; TX3; CX3; CTX3.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "Schneider Electric",
               image: "/solutions/8/26.jpeg",
               description: `Acti 9; Resi 9; Easypact; Tesys.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
             {
               name: "EKF",
               image: "/solutions/8/27.jpg",
               description: `Averes; Proxima.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
             },
           ]}
         />
@@ -2985,13 +3039,13 @@ export const solutions = [
               name: "Трехфазные счетчики серии Дала",
               image: "/solutions/5/11.jpg",
               description: `LO;LQ;LP;ES;EY;EP;EZ.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
             {
               name: "Однофазные счетчики серии Орман",
               image: "/solutions/5/12.jpg",
               description: `CU;CK;CY;CJ;CI;BL.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
             },
           ]}
         />
@@ -3002,19 +3056,19 @@ export const solutions = [
               name: "Коллекции Legrand",
               image: "/solutions/8/28.jpeg",
               description: `Niloe; Plexo; Mosaic; Выдвижные блоки и лючки.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "Коллекции Schneider Electric",
               image: "/solutions/8/29.jpeg",
               description: `Asfora.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
             {
               name: "EKF",
               image: "/solutions/8/30.jpeg",
               description: `Минск; Мурманск.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
             },
           ]}
         />
@@ -3030,19 +3084,19 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/4/7.jpeg",
               description: `Сетевые видеокамеры; Аналоговые видеокамеры; Сетевые видеорегистраторы; Цифровые видеорегистраторы; Видеостены и мониторы.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Dahua",
               image: "/solutions/6/11.jpg",
               description: `Сетевые камеры; Камеры HDCVI; PTZ-камеры; Тепловизорные камеры.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
             {
               name: "Smartec",
               image: "/solutions/4/9.jpg",
               description: `IP-камеры; IP-камеры с видеоаналитикой; Мультиформатные камеры; Аналоговые HD.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.VideoSurveillance}`,
             },
           ]}
         />
@@ -3063,25 +3117,25 @@ export const solutions = [
               name: "Hikvision",
               image: "/solutions/4/20.jpeg",
               description: `Контроллеры; Терминалы доступа; Считыватели; Настольные считыватели; Кнопки; Исполнительные устройства; Дополнительные устройства; Турникеты; Домофоны; Досмотровое оборудование.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Dahua",
               image: "/solutions/7/32.jpg",
               description: `Считыватели; Сетевые контроллеры; Домофоны; Аксессуары.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Rubezh",
               image: "/solutions/6/12.jpg",
               description: `Контроллеры; Модули доступа; OSDP-замки; Web-/OSDP-турникеты; Встроенное ПО; Считыватели.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
             {
               name: "Smartec",
               image: "/solutions/7/33.jpg",
               description: `Сетевые контроллеры; Автономные контроллеры; Биометрические считыватели; Терминалы учета рабочего времени; Контроль маршрутов; Домофоны; Идентификаторы; Турникеты; Металлодетекторы; Шлагбаумы; Блокираторы; Электромагнитные замки; Электромеханические замки; Доводчики.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AccessControlAndManagementSystem}`,
             },
           ]}
         />
@@ -3110,7 +3164,7 @@ export const solutions = [
                 Оповещатели адресные;
                 Расширители адресные;
                 Модули управления.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Smartec",
@@ -3126,7 +3180,7 @@ export const solutions = [
                 Шкафы автоматики; 
                 Шкафы монтажные взрывозащищенное оборудование. 
             `,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
           ]}
         />
@@ -3138,19 +3192,19 @@ export const solutions = [
               description: `Газовое пожаротушение; 
                 Порошкове пожаротушение; 
                 Компактные системы тушения.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Заря",
               image: "/solutions/4/27.jpg",
               description: `Газовое пожаротушение.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
             {
               name: "Император",
               image: "/solutions/8/34.jpg",
               description: `Газовое пожаротушение.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.AutomaticFireAlarm}`,
             },
           ]}
         />
@@ -3161,13 +3215,13 @@ export const solutions = [
               name: "Низкотоксичные кабели LTx для монтажа силовых линии в гостиничных комплексах",
               image: "/solutions/6/18.jpg",
               description: `ВВГ нг LS LTx; ВВГ нг FRLS LTx.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "	Cистема для прокладки кабеля Legrand кабельный канал",
               image: "/solutions/6/19.jpg",
               description: `DLP; DLP S.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
@@ -3186,19 +3240,19 @@ export const solutions = [
               name: "Legrand",
               image: "/solutions/4/28.png",
               description: `Оптоволоконные кабели; Патч-панели; Кабели SF/UTP; F/UTP; U/UTP; F/FTP; U/FTP; S/FTP; Прямые патч-корды RJ 45/RJ 45 в версиях F/UTP; U/UTP; SF/UTP; S/FTP.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "ITK",
               image: "/solutions/4/29.jpg",
               description: `LAN-кабель; LAN-кабель GREEN; Разъемы для кабеля; Инструменты и тестеры для кабеля; Инструменты; Тестеры; Монтажные аксессуары; Кабель огнестойкий; Кабель интерфейсный; Кабель интерфейсный RS485; Кабель интерфейсный огнестойкий RS485.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "HYPERLINE Витая пара:",
               image: "/solutions/4/30.jpg",
               description: `категория 3; категория 5; категория 5E; категория 6; категория 6A; категория 7, 7A, 8; Волоконно-оптический: внутренний; внутренний/внешний; внешний;`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
 
             {
@@ -3206,14 +3260,14 @@ export const solutions = [
               image: "/solutions/4/31.jpeg",
 
               description: `Шлюзы и контроллеры; Виртуальные шлюзы; Внутренние точки доступа; Наружные точки доступа; Стекируемые коммутаторы с облачным управлением.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
             {
               name: "ИЭК",
               image: "/solutions/4/32.jpg",
 
               description: `Лотки металлические листовые; Лотки металлические лестничные; Лотки металлические проволочные.`,
-              link: "",
+              link: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
             },
           ]}
         />
