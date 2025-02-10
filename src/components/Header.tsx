@@ -11,6 +11,12 @@ import { categoryMapping } from "@/data/categories";
 import useClickOutside from "@/hooks/useClickOutside";
 import { usePathname } from "next/navigation";
 
+const getCategoryNav = (categories: Category[]) =>
+  categories.map((category) => ({
+    label: categoryMapping[category],
+    href: `${PATHS.catalog}/${category}`,
+  }));
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -31,6 +37,10 @@ const Header = () => {
       href: "/",
     },
     {
+      label: "Каталог",
+      href: PATHS.catalog,
+    },
+    {
       label: "Решения",
       href: "",
       items: [
@@ -39,11 +49,30 @@ const Header = () => {
           items: [
             {
               label: "Жилые комплексы",
-              href: `${PATHS.solutions}/1`,
+              href: `${PATHS.solution}/1`,
+              items: getCategoryNav([
+                Category.LowVoltageEquipment,
+                Category.CableAndWireProducts,
+                Category.ElectricalInstallationProducts,
+                Category.LightingProducts,
+                Category.MeteringAndControlDevices,
+                Category.VideoSurveillance,
+                Category.AccessControlAndManagementSystem,
+                Category.AutomaticFireAlarm,
+              ]),
             },
             {
               label: "Частные дома",
-              href: `${PATHS.solutions}/2`,
+              href: `${PATHS.solution}/2`,
+              items: getCategoryNav([
+                Category.LightingProducts,
+                Category.LowVoltageEquipment,
+                Category.ElectricalInstallationProducts,
+                Category.MeteringAndControlDevices,
+                Category.VideoSurveillance,
+                Category.AccessControlAndManagementSystem,
+                Category.AutomaticFireAlarm,
+              ]),
             },
           ],
         },
@@ -52,15 +81,47 @@ const Header = () => {
           items: [
             {
               label: "Медицинские учреждения",
-              href: `${PATHS.solutions}/3`,
+              href: `${PATHS.solution}/3`,
+              items: getCategoryNav([
+                Category.LightingProducts,
+                Category.ElectricalInstallationProducts,
+                Category.LowVoltageEquipment,
+                Category.MeteringAndControlDevices,
+                Category.CableAndWireProducts,
+                Category.AccessControlAndManagementSystem,
+                Category.AutomaticFireAlarm,
+                Category.UninterruptiblePowerSupplies,
+                Category.VideoSurveillance,
+              ]),
             },
             {
               label: "Спортивные учреждения",
-              href: `${PATHS.solutions}/4`,
+              href: `${PATHS.solution}/4`,
+              items: getCategoryNav([
+                Category.LightingProducts,
+                Category.LowVoltageEquipment,
+                Category.ElectricalInstallationProducts,
+                Category.MeteringAndControlDevices,
+                Category.CableAndWireProducts,
+                Category.VideoSurveillance,
+                Category.AccessControlAndManagementSystem,
+                Category.AutomaticFireAlarm,
+              ]),
             },
             {
               label: "Образование",
-              href: `${PATHS.solutions}/5`,
+              href: `${PATHS.solution}/5`,
+              items: getCategoryNav([
+                Category.LightingProducts,
+                Category.ElectricalInstallationProducts,
+                Category.LowVoltageEquipment,
+                Category.MeteringAndControlDevices,
+                Category.Cabinets,
+                Category.CableAndWireProducts,
+                Category.VideoSurveillance,
+                Category.AccessControlAndManagementSystem,
+                Category.AutomaticFireAlarm,
+              ]),
             },
           ],
         },
@@ -69,15 +130,49 @@ const Header = () => {
           items: [
             {
               label: "Гостиницы",
-              href: `${PATHS.solutions}/6`,
+              href: `${PATHS.solution}/6`,
+              items: getCategoryNav([
+                Category.LightingProducts,
+                Category.LowVoltageEquipment,
+                Category.ElectricalInstallationProducts,
+                Category.CableLayingSystems,
+                Category.CableAndWireProducts,
+                Category.MeteringAndControlDevices,
+                Category.UninterruptiblePowerSupplies,
+                Category.VideoSurveillance,
+                Category.AccessControlAndManagementSystem,
+              ]),
             },
             {
               label: "Торговые центры",
-              href: `${PATHS.solutions}/7`,
+              href: `${PATHS.solution}/7`,
+              items: getCategoryNav([
+                Category.LowVoltageEquipment,
+                Category.LightingProducts,
+                Category.MeteringAndControlDevices,
+                Category.ElectricalInstallationProducts,
+                Category.CableLayingSystems,
+                Category.CableAndWireProducts,
+                Category.VideoSurveillance,
+                Category.AccessControlAndManagementSystem,
+                Category.AutomaticFireAlarm,
+              ]),
             },
             {
               label: "Бизнес центры и Административные здания",
-              href: `${PATHS.solutions}/8`,
+              href: `${PATHS.solution}/8`,
+              items: getCategoryNav([
+                Category.LightingProducts,
+                Category.LowVoltageEquipment,
+                Category.MeteringAndControlDevices,
+                Category.ElectricalInstallationProducts,
+                Category.CableLayingSystems,
+                Category.CableAndWireProducts,
+                Category.UninterruptiblePowerSupplies,
+                Category.VideoSurveillance,
+                Category.AccessControlAndManagementSystem,
+                Category.AutomaticFireAlarm,
+              ]),
             },
           ],
         },
@@ -85,44 +180,10 @@ const Header = () => {
     },
     {
       label: "Продукция",
-      items: [
-        {
-          label: categoryMapping[Category.CableAndWireProducts],
-          href: `${PATHS.catalog}/${Category.CableAndWireProducts}`,
-        },
-        {
-          label: categoryMapping[Category.LowVoltageEquipment],
-          href: `${PATHS.catalog}/${Category.LowVoltageEquipment}`,
-        },
-        {
-          label: categoryMapping[Category.ElectricalMountingProducts],
-          href: `${PATHS.catalog}/${Category.ElectricalMountingProducts}`,
-        },
-        {
-          label: categoryMapping[Category.ElectricalInstallationProducts],
-          href: `${PATHS.catalog}/${Category.ElectricalInstallationProducts}`,
-        },
-        {
-          label: categoryMapping[Category.LightingProducts],
-          href: `${PATHS.catalog}/${Category.LightingProducts}`,
-        },
-        {
-          label: categoryMapping[Category.CableLayingSystems],
-          href: `${PATHS.catalog}/${Category.CableLayingSystems}`,
-        },
-        {
-          label: categoryMapping[Category.MeteringAndControlDevices],
-          href: `${PATHS.catalog}/${Category.MeteringAndControlDevices}`,
-        },
-        {
-          label: categoryMapping[Category.ToolsAndProtectiveEquipment],
-          href: `${PATHS.catalog}/${Category.ToolsAndProtectiveEquipment}`,
-        },
-        {
-          label: categoryMapping[Category.Cabinets],
-          href: `${PATHS.catalog}/${Category.Cabinets}`,
-        },
-      ],
+      items: Object.values(Category).map((category) => ({
+        label: categoryMapping[category],
+        href: `${PATHS.catalog}/${category}`,
+      })),
     },
     {
       label: "Контакты",
@@ -137,9 +198,9 @@ const Header = () => {
     >
       <Container className="flex items-center relative">
         <Logo />
-        <nav className="justify-between hidden sm:flex p-2 ">
-          {navConfig.map((item) => (
-            <Dropdown key={item.label} item={item} />
+        <nav className="justify-between hidden sm:flex p-2 gap-12">
+          {navConfig.map((nav) => (
+            <Dropdown key={nav.label} item={nav} />
           ))}
         </nav>
         <span
@@ -169,7 +230,7 @@ const Header = () => {
             >
               <path
                 fill="#FFFFFF"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
               />
             </svg>

@@ -8,6 +8,10 @@ export enum Category {
   MeteringAndControlDevices = "MeteringAndControlDevices",
   ToolsAndProtectiveEquipment = "ToolsAndProtectiveEquipment",
   Cabinets = "Cabinets",
+  VideoSurveillance = "VideoSurveillance",
+  AccessControlAndManagementSystem = "AccessControlAndManagementSystem",
+  AutomaticFireAlarm = "AutomaticFireAlarm",
+  UninterruptiblePowerSupplies = "UninterruptiblePowerSupplies",
 }
 
 export type Product = {

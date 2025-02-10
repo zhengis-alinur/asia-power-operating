@@ -10,4 +10,9 @@ export const categoryMapping = {
   [Category.MeteringAndControlDevices]: "Приборы учета и управления",
   [Category.ToolsAndProtectiveEquipment]: "Инструменты и средства защиты",
   [Category.Cabinets]: "Шкафы",
+  [Category.VideoSurveillance]: "Видеонаблюдение",
+  [Category.AccessControlAndManagementSystem]:
+    "Система контроля и управления доступом",
+  [Category.AutomaticFireAlarm]: "Автоматическая пожарная сигнализация (АПС)",
+  [Category.UninterruptiblePowerSupplies]: "Источники бесперебойного питания",
 };

@@ -1,7 +1,7 @@
 .mobile-nav {
   li > ul {
     display: none;
-    transform: translateX(3%);
+    transform: translateX(30px);
   }
   li:hover > ul {
     display: flex;

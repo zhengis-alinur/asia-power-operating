@@ -23,7 +23,7 @@ const MobileNav = ({ config }: { config: Item[] }) => {
                 {item.items.map((subItem) => (
                   <li key={subItem.label}>
                     <Link
-                      className="flex items-center my-2 gap-2"
+                      className="flex items-center my-2 gap-6"
                       href={subItem.href || ""}
                     >
                       {subItem.label}
@@ -35,11 +35,28 @@ const MobileNav = ({ config }: { config: Item[] }) => {
                     </Link>
                     {subItem.items && (
                       <ul className="flex flex-col gap-2">
-                        {subItem.items.map((subItem) => (
-                          <li key={subItem.label}>
-                            <Link href={subItem.href || ""}>
-                              {subItem.label}
+                        {subItem.items.map((subsubItem) => (
+                          <li key={subsubItem.label}>
+                            <Link
+                              className="flex items-center my-2 gap-6"
+                              href={subsubItem.href || ""}
+                            >
+                              {subsubItem.label}
+                              <span>
+                                <ArrowIcon />
+                              </span>
                             </Link>
+                            {subsubItem.items && (
+                              <ul className="flex flex-col gap-2">
+                                {subsubItem.items.map((subItem) => (
+                                  <li key={subItem.label}>
+                                    <Link href={subItem.href || ""}>
+                                      {subItem.label}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
                           </li>
                         ))}
                       </ul>
