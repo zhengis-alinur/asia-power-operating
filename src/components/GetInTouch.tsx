@@ -63,7 +63,12 @@ const GetInTouch = () => {
                     <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 ">
                       Наш адрес
                     </h3>
-                    <p className="text-gray-600 ">Кабанбай батыр 1000</p>
+                    <a
+                      className="text-gray-600 "
+                      href="https://go.2gis.com/3WPCX"
+                    >
+                      Керей Жанибке 12а, офис 603
+                    </a>
                     <p className="text-gray-600 ">Астана, Казахстан</p>
                   </div>
                 </li>
@@ -90,8 +95,15 @@ const GetInTouch = () => {
                     <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 ">
                       Контактные данные
                     </h3>
-                    <p className="text-gray-600 ">Mobile: +7 700 606 8494</p>
-                    <p className="text-gray-600 ">Mail: email@mail.com</p>
+                    <p className="text-gray-600 ">
+                      Mobile: <a href="tel:+7-700-606-8494">+7 700 606 8494</a>
+                    </p>
+                    <p className="text-gray-600 ">
+                      Mail:{" "}
+                      <a href="ap.operating@gmail.com">
+                        ap.operating@gmail.com
+                      </a>
+                    </p>
                   </div>
                 </li>
                 <li className="flex">
