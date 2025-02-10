@@ -17,6 +17,163 @@ const getCategoryNav = (categories: Category[]) =>
     href: `${PATHS.catalog}/${category}`,
   }));
 
+export const navConfig: Item[] = [
+  {
+    label: "Главная",
+    href: "/",
+  },
+  {
+    label: "Решения",
+    href: "/solutions",
+    items: [
+      {
+        label: "Жилой сектор",
+        items: [
+          {
+            label: "Жилые комплексы",
+            href: `${PATHS.solution}/1`,
+            items: getCategoryNav([
+              Category.LowVoltageEquipment,
+              Category.CableAndWireProducts,
+              Category.ElectricalInstallationProducts,
+              Category.LightingProducts,
+              Category.MeteringAndControlDevices,
+              Category.VideoSurveillance,
+              Category.AccessControlAndManagementSystem,
+              Category.AutomaticFireAlarm,
+            ]),
+          },
+          {
+            label: "Частные дома",
+            href: `${PATHS.solution}/2`,
+            items: getCategoryNav([
+              Category.LightingProducts,
+              Category.LowVoltageEquipment,
+              Category.ElectricalInstallationProducts,
+              Category.MeteringAndControlDevices,
+              Category.VideoSurveillance,
+              Category.AccessControlAndManagementSystem,
+              Category.AutomaticFireAlarm,
+            ]),
+          },
+        ],
+      },
+      {
+        label: "Гражданское строительство",
+        items: [
+          {
+            label: "Медицинские учреждения",
+            href: `${PATHS.solution}/3`,
+            items: getCategoryNav([
+              Category.LightingProducts,
+              Category.ElectricalInstallationProducts,
+              Category.LowVoltageEquipment,
+              Category.MeteringAndControlDevices,
+              Category.CableAndWireProducts,
+              Category.AccessControlAndManagementSystem,
+              Category.AutomaticFireAlarm,
+              Category.UninterruptiblePowerSupplies,
+              Category.VideoSurveillance,
+            ]),
+          },
+          {
+            label: "Спортивные учреждения",
+            href: `${PATHS.solution}/4`,
+            items: getCategoryNav([
+              Category.LightingProducts,
+              Category.LowVoltageEquipment,
+              Category.ElectricalInstallationProducts,
+              Category.MeteringAndControlDevices,
+              Category.CableAndWireProducts,
+              Category.VideoSurveillance,
+              Category.AccessControlAndManagementSystem,
+              Category.AutomaticFireAlarm,
+            ]),
+          },
+          {
+            label: "Образование",
+            href: `${PATHS.solution}/5`,
+            items: getCategoryNav([
+              Category.LightingProducts,
+              Category.ElectricalInstallationProducts,
+              Category.LowVoltageEquipment,
+              Category.MeteringAndControlDevices,
+              Category.Cabinets,
+              Category.CableAndWireProducts,
+              Category.VideoSurveillance,
+              Category.AccessControlAndManagementSystem,
+              Category.AutomaticFireAlarm,
+            ]),
+          },
+        ],
+      },
+      {
+        label: "Коммерческие здания",
+        items: [
+          {
+            label: "Гостиницы",
+            href: `${PATHS.solution}/6`,
+            items: getCategoryNav([
+              Category.LightingProducts,
+              Category.LowVoltageEquipment,
+              Category.ElectricalInstallationProducts,
+              Category.CableLayingSystems,
+              Category.CableAndWireProducts,
+              Category.MeteringAndControlDevices,
+              Category.UninterruptiblePowerSupplies,
+              Category.VideoSurveillance,
+              Category.AccessControlAndManagementSystem,
+            ]),
+          },
+          {
+            label: "Торговые центры",
+            href: `${PATHS.solution}/7`,
+            items: getCategoryNav([
+              Category.LowVoltageEquipment,
+              Category.LightingProducts,
+              Category.MeteringAndControlDevices,
+              Category.ElectricalInstallationProducts,
+              Category.CableLayingSystems,
+              Category.CableAndWireProducts,
+              Category.VideoSurveillance,
+              Category.AccessControlAndManagementSystem,
+              Category.AutomaticFireAlarm,
+            ]),
+          },
+          {
+            label: "Бизнес центры и Административные здания",
+            href: `${PATHS.solution}/8`,
+            items: getCategoryNav([
+              Category.LightingProducts,
+              Category.LowVoltageEquipment,
+              Category.MeteringAndControlDevices,
+              Category.ElectricalInstallationProducts,
+              Category.CableLayingSystems,
+              Category.CableAndWireProducts,
+              Category.UninterruptiblePowerSupplies,
+              Category.VideoSurveillance,
+              Category.AccessControlAndManagementSystem,
+              Category.AutomaticFireAlarm,
+            ]),
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Продукция",
+    href: PATHS.catalog,
+    items: Object.values(Category).map((category) => ({
+      label: categoryMapping[category],
+      href: `${PATHS.catalog}/${category}`,
+    })),
+  },
+  {
+    label: "Контакты",
+    href: PATHS.contacts,
+  },
+];
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -30,166 +187,6 @@ const Header = () => {
   useClickOutside(ref, () => {
     setOpen(false);
   });
-
-  const navConfig: Item[] = [
-    {
-      label: "Главная",
-      href: "/",
-    },
-    {
-      label: "Каталог",
-      href: PATHS.catalog,
-    },
-    {
-      label: "Решения",
-      href: "",
-      items: [
-        {
-          label: "Жилой сектор",
-          items: [
-            {
-              label: "Жилые комплексы",
-              href: `${PATHS.solution}/1`,
-              items: getCategoryNav([
-                Category.LowVoltageEquipment,
-                Category.CableAndWireProducts,
-                Category.ElectricalInstallationProducts,
-                Category.LightingProducts,
-                Category.MeteringAndControlDevices,
-                Category.VideoSurveillance,
-                Category.AccessControlAndManagementSystem,
-                Category.AutomaticFireAlarm,
-              ]),
-            },
-            {
-              label: "Частные дома",
-              href: `${PATHS.solution}/2`,
-              items: getCategoryNav([
-                Category.LightingProducts,
-                Category.LowVoltageEquipment,
-                Category.ElectricalInstallationProducts,
-                Category.MeteringAndControlDevices,
-                Category.VideoSurveillance,
-                Category.AccessControlAndManagementSystem,
-                Category.AutomaticFireAlarm,
-              ]),
-            },
-          ],
-        },
-        {
-          label: "Гражданское строительство",
-          items: [
-            {
-              label: "Медицинские учреждения",
-              href: `${PATHS.solution}/3`,
-              items: getCategoryNav([
-                Category.LightingProducts,
-                Category.ElectricalInstallationProducts,
-                Category.LowVoltageEquipment,
-                Category.MeteringAndControlDevices,
-                Category.CableAndWireProducts,
-                Category.AccessControlAndManagementSystem,
-                Category.AutomaticFireAlarm,
-                Category.UninterruptiblePowerSupplies,
-                Category.VideoSurveillance,
-              ]),
-            },
-            {
-              label: "Спортивные учреждения",
-              href: `${PATHS.solution}/4`,
-              items: getCategoryNav([
-                Category.LightingProducts,
-                Category.LowVoltageEquipment,
-                Category.ElectricalInstallationProducts,
-                Category.MeteringAndControlDevices,
-                Category.CableAndWireProducts,
-                Category.VideoSurveillance,
-                Category.AccessControlAndManagementSystem,
-                Category.AutomaticFireAlarm,
-              ]),
-            },
-            {
-              label: "Образование",
-              href: `${PATHS.solution}/5`,
-              items: getCategoryNav([
-                Category.LightingProducts,
-                Category.ElectricalInstallationProducts,
-                Category.LowVoltageEquipment,
-                Category.MeteringAndControlDevices,
-                Category.Cabinets,
-                Category.CableAndWireProducts,
-                Category.VideoSurveillance,
-                Category.AccessControlAndManagementSystem,
-                Category.AutomaticFireAlarm,
-              ]),
-            },
-          ],
-        },
-        {
-          label: "Коммерческие здания",
-          items: [
-            {
-              label: "Гостиницы",
-              href: `${PATHS.solution}/6`,
-              items: getCategoryNav([
-                Category.LightingProducts,
-                Category.LowVoltageEquipment,
-                Category.ElectricalInstallationProducts,
-                Category.CableLayingSystems,
-                Category.CableAndWireProducts,
-                Category.MeteringAndControlDevices,
-                Category.UninterruptiblePowerSupplies,
-                Category.VideoSurveillance,
-                Category.AccessControlAndManagementSystem,
-              ]),
-            },
-            {
-              label: "Торговые центры",
-              href: `${PATHS.solution}/7`,
-              items: getCategoryNav([
-                Category.LowVoltageEquipment,
-                Category.LightingProducts,
-                Category.MeteringAndControlDevices,
-                Category.ElectricalInstallationProducts,
-                Category.CableLayingSystems,
-                Category.CableAndWireProducts,
-                Category.VideoSurveillance,
-                Category.AccessControlAndManagementSystem,
-                Category.AutomaticFireAlarm,
-              ]),
-            },
-            {
-              label: "Бизнес центры и Административные здания",
-              href: `${PATHS.solution}/8`,
-              items: getCategoryNav([
-                Category.LightingProducts,
-                Category.LowVoltageEquipment,
-                Category.MeteringAndControlDevices,
-                Category.ElectricalInstallationProducts,
-                Category.CableLayingSystems,
-                Category.CableAndWireProducts,
-                Category.UninterruptiblePowerSupplies,
-                Category.VideoSurveillance,
-                Category.AccessControlAndManagementSystem,
-                Category.AutomaticFireAlarm,
-              ]),
-            },
-          ],
-        },
-      ],
-    },
-    {
-      label: "Продукция",
-      items: Object.values(Category).map((category) => ({
-        label: categoryMapping[category],
-        href: `${PATHS.catalog}/${category}`,
-      })),
-    },
-    {
-      label: "Контакты",
-      href: PATHS.contacts,
-    },
-  ];
 
   return (
     <div
