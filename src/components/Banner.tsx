@@ -47,7 +47,7 @@ const Banner = () => {
             </p>
             <Link
               href={PATHS.catalog}
-              className="p-2 bg-accent text-black animate-bounce"
+              className="p-2 bg-accent text-black animate-bounce text-xl"
             >
               Посмотреть каталог
             </Link>
