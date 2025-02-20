@@ -33,7 +33,7 @@ const Banner = () => {
               Получите профессиональное оборудование и комплектующие для монтажа
               электрооборудования!
             </p>
-            <p className="w-4/5 text-center text-xl hidden md:block bg-black bg-opacity-60 p-3">
+            <p className="w-full text-center text-2xl font-light hidden md:block bg-black bg-opacity-60 p-3">
               Получите профессиональное оборудование и комплектующие для монтажа
               электрооборудования! <br />
               <br /> Кабельно-проводниковая продукция, низковольтное
