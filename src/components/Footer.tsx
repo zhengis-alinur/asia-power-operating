@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="ml-4 mb-4">
               <h3 className="mb-2 text-lg font-medium leading-6 ">Наш адрес</h3>
               <a className="text-gray-400" href="https://go.2gis.com/3WPCX">
-                Керей Жанибке 12а, офис 603
+                Керей Жанибек 12а, офис 603
               </a>
               <p className="text-gray-400 ">Астана, Казахстан</p>
             </div>
