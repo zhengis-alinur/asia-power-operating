@@ -67,7 +67,7 @@ const GetInTouch = () => {
                       className="text-gray-600 "
                       href="https://go.2gis.com/3WPCX"
                     >
-                      Керей Жанибке 12а, офис 603
+                      Керей Жанибек 12а, офис 603
                     </a>
                     <p className="text-gray-600 ">Астана, Казахстан</p>
                   </div>
