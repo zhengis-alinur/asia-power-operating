@@ -22,10 +22,11 @@ const Footer = () => {
                 Контактные данные
               </h3>
               <p className="text-gray-400 ">
-                Телефон: <a href="tel:+7-700-606-8494">+7 700 606 8494</a>
+                Мобильный телефон:{" "}
+                <a href="tel:+7-700-606-8494">+7 700 606 8494</a>
               </p>
               <p className="text-gray-400 ">
-                Email:{" "}
+                Почтовый адрес:{" "}
                 <a href="ap.operating@gmail.com">ap.operating@gmail.com</a>
               </p>
             </div>

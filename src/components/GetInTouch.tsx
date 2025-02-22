@@ -96,10 +96,11 @@ const GetInTouch = () => {
                       Контактные данные
                     </h3>
                     <p className="text-gray-600 ">
-                      Mobile: <a href="tel:+7-700-606-8494">+7 700 606 8494</a>
+                      Мобильный телефон:{" "}
+                      <a href="tel:+7-700-606-8494">+7 700 606 8494</a>
                     </p>
                     <p className="text-gray-600 ">
-                      Mail:{" "}
+                      Почтовый адрес:{" "}
                       <a href="ap.operating@gmail.com">
                         ap.operating@gmail.com
                       </a>
